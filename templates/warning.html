@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potential Duplicate</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 style="color:orange;">
+        ⚠ Potential Duplicate Detected
+    </h1>
+
+    <p>
+        The name you entered is very similar to:
+    </p>
+
+    <h2>{{ matched_name }}</h2>
+
+    <p>
+        Similarity Score:
+        <strong>{{ similarity }}%</strong>
+    </p>
+
+    <p>
+        You can go back to review the data or save it anyway if
+        you believe it is a different person.
+    </p>
+
+    <form action="/save_anyway" method="POST">
+
+        <input
+            type="hidden"
+            name="full_name"
+            value="{{ full_name }}"
+        >
+
+        <input
+            type="hidden"
+            name="email"
+            value="{{ email }}"
+        >
+
+        <input
+            type="hidden"
+            name="phone"
+            value="{{ phone }}"
+        >
+
+        <button type="submit">
+            Save Anyway
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        <button>
+            Cancel
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

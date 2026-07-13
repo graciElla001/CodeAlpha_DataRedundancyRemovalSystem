@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>All Records</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Saved Records</h1>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Full Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Status</th>
+
+</tr>
+
+{% for record in records %}
+
+<tr>
+
+<td>{{ record[0] }}</td>
+<td>{{ record[1] }}</td>
+<td>{{ record[2] }}</td>
+<td>{{ record[3] }}</td>
+<td>{{ record[4] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/">
+<button>Back Home</button>
+</a>
+
+</div>
+
+</body>
+
+</html>
