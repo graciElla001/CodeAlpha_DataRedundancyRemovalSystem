@@ -1,10 +1,10 @@
-# 🚀 CodeAlpha Data Redundancy Removal System
+#  CodeAlpha Data Redundancy Removal System
 
 A Flask-based web application developed as part of the **CodeAlpha Internship Program** to improve database quality by detecting duplicate records, validating user input, and classifying false positives before storing data.
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 This application helps organizations maintain clean and reliable databases by preventing duplicate entries and identifying records that may already exist.
 
@@ -12,19 +12,19 @@ The system combines **exact duplicate detection** (using email validation) with 
 
 ---
 
-## ✨ Features
+##  Features
 
-* ✅ Prevents duplicate email entries
-* ✅ Detects similar names using RapidFuzz
-* ✅ Classifies records as **Unique** or **False Positive**
-* ✅ Allows users to manually confirm potential duplicates
-* ✅ Stores validated records in an SQLite database
-* ✅ Simple and responsive web interface
-* ✅ Modular Flask project structure
+*  Prevents duplicate email entries
+*  Detects similar names using RapidFuzz
+*  Classifies records as **Unique** or **False Positive**
+*  Allows users to manually confirm potential duplicates
+*  Stores validated records in an SQLite database
+*  Simple and responsive web interface
+*  Modular Flask project structure
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Flask
@@ -37,7 +37,7 @@ The system combines **exact duplicate detection** (using email validation) with 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 CodeAlpha_DataRedundancyRemovalSystem/
@@ -64,7 +64,7 @@ CodeAlpha_DataRedundancyRemovalSystem/
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. User enters their information.
 2. The system checks whether the email already exists.
@@ -79,7 +79,7 @@ CodeAlpha_DataRedundancyRemovalSystem/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 Clone the repository:
 
@@ -119,18 +119,7 @@ python app.py
 
 ---
 
-## 📸 Application Screens
-
-You can add screenshots here later, for example:
-
-* Home Page
-* Duplicate Detection
-* Potential Duplicate Warning
-* Record Saved Successfully
-
----
-
-## 🔮 Future Improvements
+## Future Improvements
 
 * User authentication
 * Dashboard with analytics
@@ -141,7 +130,7 @@ You can add screenshots here later, for example:
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Ijeoma Onwuasoanya**
 
